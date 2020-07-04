@@ -2,7 +2,7 @@
 
 *last update: 06/25/2020*
 
-### Reference
+### Main Reference
 
 1. [https://javascript.info/](https://javascript.info/)
 
@@ -11,3 +11,5 @@
 ### current content
 
 * Introduction
+* Code Structure
+* Variable
