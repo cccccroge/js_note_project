@@ -1,16 +1,42 @@
 'use strict';
 
-let a = String(NaN);      // "NaN"
-let b = "Okay" + 3;       // "Okay3"
-let c = "Okay" + 3 + NaN;  // "Okay3NaN"
-let d = 3 + NaN;           // NaN
+function checkLogin()
+{
+    let correct_username = "Admin";
+    let correct_password = "TheMaster";
 
-let e = "6" - "2";         // 4
-let f = "6" + "2";         // "62"
-let g = +"  \t 123  \n"; // 123
-let h = +" 12 3  ";        // NaN
-let i = +"\t \n";        // 0
 
-let j = Boolean(undefined) || Boolean(null) || Boolean(NaN);  // false
-let k = Boolean(""); // false
-let l = Boolean(" ") && Boolean("0");  // true
+    // ask for username
+    let username = prompt("Enter username", "");
+    
+    if (username === null || username === "") {
+        
+        alert("Canceled");
+
+    } else if (username !== correct_username) {
+
+        alert("I don't know you");
+
+    } else {
+
+        // ask for password
+        let password = prompt("Enter password", "");
+    
+        if (password === null || password === "") {
+            
+            alert("Canceled");
+    
+        } else if (password !== correct_password) {
+    
+            alert("Wrong password");
+    
+        } else {
+
+            alert("Welcome!");
+
+        }
+
+    }
+}
+
+checkLogin();
